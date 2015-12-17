@@ -1,7 +1,7 @@
 <?php
 namespace a\name\space;
 
-/**
+/*
  * A comment.
  */
 
@@ -20,6 +20,9 @@ abstract class AnAbstractClass
 {
 }
 
+/**
+ * A comment.
+ */
 class AClass extends AnAbstractClass implements AnInterface
 {
     const A_CLASS_CONSTANT = 'bar';
@@ -41,7 +44,7 @@ class AClass extends AnAbstractClass implements AnInterface
 
     public function aPublicMethod()
     {
-        $a = TRUE ? TRUE : FALSE;
+        $a = true ? true : false;
 
         c::m();
         c::$m();
@@ -52,7 +55,7 @@ class AClass extends AnAbstractClass implements AnInterface
 
     protected function aProtectedMethod()
     {
-        if (TRUE) {
+        if (true) {
         }
 
         $c::m();
